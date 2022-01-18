@@ -1,0 +1,65 @@
+TUGAS KELOMPOK UAS MATKUL PHP
+
+Nama Ketua 	: Ambar Sari (2110038)
+Anggota		: Aziza Nurul Amanah (2110025)
+		  Hayatun Nufus (21100204)
+
+STRUKTUR DATABASE
+-------------------------------------------
+# Database => db_sekolahcoding
+
+# pengguna
+===========================================
+1 id			| int (11) primary key auto increment
+2 nama			| varchar (30)
+3 username		| varchar (30)
+4 password		| varchar (50)
+5 level			| enum ('Super Admin', 'Admin)
+6 created_at		| timestamp
+7 updated_at		| datetime null
+
+# pengaturan
+===========================================
+1 id			| int (11) primary key auto increment
+2 nama			| varchar (50)
+3 email			| varchar (50)
+4 telepon		| varchar (20)
+5 alamat		| text
+6 logo			| varchar (50)
+7 favicon		| varchar (50)
+8 created_at		| timestamp
+9 updated_at		| datetime null
+
+
+# informasi
+===========================================
+1 id			| int (11) primary key auto increment
+2 judul			| varchar (100)
+3 keterangan		| text
+4 created_at		| timestamp
+5 updated_at		| datetime null
+6 created_by		| int (11) foreign key
+
+
+
+MENU
+--------------------------------------------
+1 User			: - Beranda
+			  - Tentang Sekolah
+			  - Informasi
+			  - Kontak
+
+2 Super Admin		: - Login
+			  - Dashboard
+			  - Data Pengguna (create, read, update, delete)
+			  - Ubah Password
+			  - Keluar
+
+2 Admin			: - Login
+			  - Dashboard
+			  - Tentang Sekolah (update)
+			  - Ubah Password
+			  - Keluar
+
+
+<<================== Semangat Team ===================>
